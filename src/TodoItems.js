@@ -4,7 +4,7 @@ class TodoItems extends Component {
 
   render() {
     let listItems = this.props.entries.map((entry) =>  {
-      return <li key={entry.key}>{entry.text}</li>;
+      return <li key={entry.key} onClick={() => this.props.deletions(entry.key)}>{entry.text}</li>;
     })
     return (
       <div>

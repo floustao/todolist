@@ -9,6 +9,7 @@ class TodoList extends Component {
       items:[]
     }
     this.addItem = this.addItem.bind(this);
+    this.deleteItem = this.deleteItem.bind(this);
   }
 
   addItem(e) {
@@ -26,6 +27,11 @@ class TodoList extends Component {
     console.log(this.state.items);
   }
 
+  deleteItem(key) {
+    let filteredItems = this.state.items.filter(item => item.key !== key);
+    this.setState({items: filteredItems});
+  }
+
   render() {
     return (
 
@@ -33,11 +39,13 @@ class TodoList extends Component {
         <h1>Todo App</h1>
         <div className="main-form">
           <form onSubmit={this.addItem}>
-            <input type="text" placeholder="add a task" ref={ (a) => this.myRef = a }/>
+            <input type="text" placeholder="Add a task..." ref={ (a) => this.myRef = a }/>
             <button type="submit">+</button>
           </form>
         </div>
-      <TodoItems entries={this.state.items} />
+      <TodoItems entries={this.state.items}
+                 deletions={this.deleteItem}
+                 />
       </div>
     )
   }
