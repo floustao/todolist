@@ -1,23 +1,30 @@
 #todoApp {
-  height: 50vh; }
+  height: 50vh;
+}
 
 .todo-form {
-  text-align: center; }
+  text-align: center;
+}
+
 
 button {
   background-color: black;
-  color: white; }
+  color: white;
+}
 
 ul.list {
-  padding: 0; }
+  padding: 0;
+}
 
 .list li:hover {
   transform: scale(1.1);
-  transition: all .2s ease-in-out; }
+  transition: all .2s ease-in-out;
+}
 
 .list li, input, button {
   list-style-type: none;
   border: 1px solid white;
   padding: 10px;
   margin: 20px 0;
-  font-weight: bold; }
+  font-weight: bold;
+}

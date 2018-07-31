@@ -35,17 +35,20 @@ class TodoList extends Component {
   render() {
     return (
 
-      <div className="main">
-        <h1>Todo App</h1>
-        <div className="main-form">
+      <div className="todo-container">
+        <div className="todo-form">
+          <h1>Todo App</h1>
           <form onSubmit={this.addItem}>
             <input type="text" placeholder="Add a task..." ref={ (a) => this.myRef = a }/>
             <button type="submit">+</button>
           </form>
         </div>
-      <TodoItems entries={this.state.items}
-                 deletions={this.deleteItem}
-                 />
+
+        <div className="todo-items">
+          <TodoItems entries={this.state.items}
+                     deletions={this.deleteItem}
+                     />
+        </div>
       </div>
     )
   }
