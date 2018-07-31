@@ -16,7 +16,9 @@ class CalculatorFrame extends Component {
 
   handleClick(event) {
     const value = event.currentTarget.value;
-    if (value === '=') {
+    if (value === '=' && this.state.input === '') {
+      //empty input
+    } else if (value === '=' && this.state.input !== '') {
       try {
         let result = eval(this.state.input).toString();
         this.setState({output: result});
