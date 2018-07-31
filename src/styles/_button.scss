@@ -1,4 +1,11 @@
-button {
-  background-color: black;
+.button {
+  width: 70px;
   color: white;
+  margin: 0;
+  &.input-button {
+    background-color: black;
+  }
+  &.action-button {
+  background-color: #f45c42;;
+  }
 }

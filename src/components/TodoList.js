@@ -40,7 +40,7 @@ class TodoList extends Component {
           <h1>Todo App</h1>
           <form onSubmit={this.addItem}>
             <input type="text" placeholder="Add a task..." ref={ (a) => this.myRef = a }/>
-            <button type="submit">+</button>
+            <button type="submit" className="button input-button">+</button>
           </form>
         </div>
 

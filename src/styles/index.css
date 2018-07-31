@@ -5,12 +5,17 @@
 .todo-form {
   text-align: center; }
 
-.calculator {
+.frame {
   text-align: center; }
 
-button {
-  background-color: black;
-  color: white; }
+.button {
+  width: 70px;
+  color: white;
+  margin: 0; }
+  .button.input-button {
+    background-color: black; }
+  .button.action-button {
+    background-color: #f45c42; }
 
 ul.list {
   padding: 0; }
