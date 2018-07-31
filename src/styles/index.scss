@@ -1,0 +1,21 @@
+@import "./todoApp.scss";
+@import "./calculatorApp.scss";
+@import "./button.scss";
+@import "./list.scss";
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
+
+// variables
+// $black: #211919;
+$red: #f45c42;
+$primary-font: 'Satisfy', cursive;
+
+
+body {
+  padding: 50px;
+  font-family: $primary-font;
+  background: linear-gradient(70deg, rgb(0, 0, 0), rgb(77, 77, 74));
+  color: $red;
+  height: 100vh;
+}
+
