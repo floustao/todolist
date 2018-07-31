@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Satisfy");
 #todoApp {
-  height: 50vh; }
+  height: 40vh; }
 
 .todo-form {
   text-align: center; }
 
 .frame {
   text-align: center; }
+
+input.calculator-screen {
+  margin: 20px 4px; }
 
 .button {
   width: 70px;
@@ -18,7 +21,11 @@
     background-color: #f45c42; }
 
 ul.list {
-  padding: 0; }
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 30vh; }
 
 .list li:hover {
   transform: scale(1.1);
@@ -28,8 +35,9 @@ ul.list {
   list-style-type: none;
   border: 1px solid white;
   padding: 10px;
-  margin: 20px 0;
-  font-weight: bold; }
+  margin: 20px 10px;
+  font-weight: bold;
+  text-align: center; }
 
 body {
   padding: 50px;

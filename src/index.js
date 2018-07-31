@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import TodoList from './components/TodoList';
-import Frame from './components/Frame';
+import CalculatorFrame from './components/CalculatorFrame';
 import './styles/index.css';
 
 ReactDOM.render(<TodoList />, document.getElementById('todoApp'));
-ReactDOM.render(<Frame />, document.getElementById('calculatorApp'));
+ReactDOM.render(<CalculatorFrame />, document.getElementById('calculatorApp'));
 

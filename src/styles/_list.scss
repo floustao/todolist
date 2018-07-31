@@ -1,5 +1,9 @@
 ul.list {
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 30vh;
 }
 
 .list li:hover {
@@ -11,6 +15,7 @@ ul.list {
   list-style-type: none;
   border: 1px solid white;
   padding: 10px;
-  margin: 20px 0;
+  margin: 20px 10px;
   font-weight: bold;
+  text-align: center;
 }
